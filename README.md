@@ -1,4 +1,3 @@
-# reducao_dimensionalidade
 # Redução de dimensionalidade
 
 Ao se trabalhar com Machine Learning, podemos nos deparar com modelos com um grande número de atributos. E geralmente é isso que ocorre com datasets do mundo real. Para isso, pode ser necessário a redução de dimensionalidade para ganho de eficiência computacional, ou até para visualizar o resultado na forma de um gráfico. Duas técnicas comuns para isso são o PCA e o t-SNE.
@@ -59,9 +58,8 @@ $$
 y = W' \times x
 $$
 
-[Fonte: [https://dinhanhthi.com/principal-component-analysis/](https://dinhanhthi.com/principal-component-analysis/)](https://dinhanhthi.com/img/post/ML/dim_redu/pca-3-640w.webp)
+![Fonte: [https://dinhanhthi.com/principal-component-analysis/](https://dinhanhthi.com/principal-component-analysis/)](https://dinhanhthi.com/img/post/ML/dim_redu/pca-3-640w.webp)
 
-Fonte: [https://dinhanhthi.com/principal-component-analysis/](https://dinhanhthi.com/principal-component-analysis/)
 
 ## Considerações
 
@@ -126,15 +124,13 @@ Para um problema usual envolvendo uma bola N-dimensional, o volume dessa bola de
 
 ![Fonte: [https://www.oreilly.com/content/an-illustrated-introduction-to-the-t-sne-algorithm/](https://www.oreilly.com/content/an-illustrated-introduction-to-the-t-sne-algorithm/)](https://www.oreilly.com/content/wp-content/uploads/sites/2/2019/06/spheres-eaa90761.png)
 
-Fonte: [https://www.oreilly.com/content/an-illustrated-introduction-to-the-t-sne-algorithm/](https://www.oreilly.com/content/an-illustrated-introduction-to-the-t-sne-algorithm/)
 
 Se, ao reduzir a dimensionalidade do dataset, usássemos a gaussiana também, teríamos um desbalanceamento na distribuição de distâncias de pontos vizinhos, pois a distribuição de distâncias é muito diferente entre um espaco dimensional alto para um espaço com dimensões menores. Esse desequilíbrio levaria a um excesso das forças de atração, levando a um mapeamento não tão agradável de visualizar.
 
 O que acontece com a distribuição de t-Student com um grau de liberdade (Cauchy) é que a cauda é mais longa que na gaussiana (é uma distribuição de cauda longa/pesada/gorda), o que compensa esse desbalanceamento original. 
 
-[Fonte: [https://qph.cf2.quoracdn.net/main-qimg-e19399de83708821ee430dfb31cbc4f3](https://qph.cf2.quoracdn.net/main-qimg-e19399de83708821ee430dfb31cbc4f3)](https://qph.cf2.quoracdn.net/main-qimg-e19399de83708821ee430dfb31cbc4f3)
+![Fonte: [https://qph.cf2.quoracdn.net/main-qimg-e19399de83708821ee430dfb31cbc4f3](https://qph.cf2.quoracdn.net/main-qimg-e19399de83708821ee430dfb31cbc4f3)](https://qph.cf2.quoracdn.net/main-qimg-e19399de83708821ee430dfb31cbc4f3)
 
-Fonte: [https://qph.cf2.quoracdn.net/main-qimg-e19399de83708821ee430dfb31cbc4f3](https://qph.cf2.quoracdn.net/main-qimg-e19399de83708821ee430dfb31cbc4f3)
 
 Então, usando tal distribuição conseguimos visualizações melhores, onde os pontos estão separados de forma mais distinguível.
 
@@ -156,8 +152,6 @@ E perplexidade (0-100), que é usado para escolher o desvio padrão $\sigma_i$ d
 ![Exemplo de visualização com t-SNE 
 Fonte: [https://towardsdatascience.com/an-introduction-to-t-sne-with-python-example-5a3a293108d1](https://towardsdatascience.com/an-introduction-to-t-sne-with-python-example-5a3a293108d1)](https://miro.medium.com/max/1370/1*njEd7PiqBW-zW38E23Ho9w.png)
 
-Exemplo de visualização com t-SNE 
-Fonte: [https://towardsdatascience.com/an-introduction-to-t-sne-with-python-example-5a3a293108d1](https://towardsdatascience.com/an-introduction-to-t-sne-with-python-example-5a3a293108d1)
 
 ## Fontes
 
